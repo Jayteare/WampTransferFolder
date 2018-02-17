@@ -7,5 +7,7 @@
   </head>
   <body>
     Hello <?php echo $_SESSION['fname'] ?> <?php echo $_SESSION['lname']; ?>.  Welcome to the employee homepage.
+    <br>
+    <a href="http://localhost/462Project/index.html.php">Logout</a>
   </body>
 </html>

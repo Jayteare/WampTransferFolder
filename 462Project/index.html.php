@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+  $_SESSION['user'] = "";
+  $_SESSION['fname'] = "";
+  $_SESSION['lname'] = "";
+?>
 <html>
   <head>
     <meta charset="utf-8">
