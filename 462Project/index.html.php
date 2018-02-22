@@ -19,5 +19,7 @@
       <input type="password" name="password" ><br><br>
       <input type="submit" name="login_submit" value="Submit">
     </form>
+    <br>
+    <a href="/462Project/create_new_employee.html.php">Create New Employee Account</a>
   </body>
 </html>
