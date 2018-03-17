@@ -6,7 +6,7 @@
     $username=$_POST['username'];
     $password=$_POST['password'];
     //Query to check if User/Pass combo is in Employee table
-    $query = "SELECT COUNT(*), username, password, fname, lname FROM (SELECT username, password, fname, lname FROM employees WHERE username = '".$username."' && password = '".$password."') AS x";
+    $query = "SELECT COUNT(*), username, password, fname, lname, company_pin FROM (SELECT username, password, fname, lname, company_pin FROM employees WHERE username = '".$username."' && password = '".$password."') AS x";
     $stmt = $db->prepare($query);
     $stmt->execute();
     $result = $stmt->fetchAll();
@@ -25,13 +25,15 @@
         $_SESSION['cur_user'] = $username;
         $_SESSION['fname'] = $row['fname'];
         $_SESSION['lname'] = $row['lname'];
-        header('Location:http://localhost/462Project/employee_homepage.html.php');
+        $_SESSION['company_id'] = $row['company_pin'];
+        header('Location:http://localhost/462Project/employee_newshift.html.php');
       }else{
         foreach($manresult as $manrow){
           if($manrow['COUNT(*)'] > 0){
             $_SESSION['cur_user'] = $username;
             $_SESSION['fname'] = $manrow['fname'];
             $_SESSION['lname'] = $manrow['lname'];
+            $_SESSION['lname'] = $row['lname'];
             header('Location:http://localhost/462Project/manager_homepage.html.php');
           }else{
             header('Location:http://localhost/462Project/index.html.php');
@@ -157,5 +159,14 @@
         header('Location:http://localhost/462Project/create_new_company.html.php');
       }
     }
+  }
+
+  if(isset($_POST['shift_enroll_confirmation'])){
+    $query = "INSERT INTO queued_shifts VALUES ('".$_SESSION['shift_enroll_id']."', '".$_SESSION['company_id']."', '".$_SESSION['cur_user']."')";
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $_SESSION['shift_enroll_id'] = null;
+    header('Location:http://localhost/462Project/employee_newshift.html.php');
+
   }
 ?>

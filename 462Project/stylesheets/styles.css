@@ -22,6 +22,7 @@ background-color: rgb(96, 125, 139);
 .title-text{
   font-size: 30px;
   font-weight: bold;
+
 }
 
 .create-text {
@@ -31,4 +32,115 @@ background-color: rgb(96, 125, 139);
 
 .link-button{
   font-size: 14px;
+}
+
+.title-body{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.shift-body{
+  border: 2px solid black;
+  border-radius: 25px;
+  background: rgb(149, 194, 215);
+  padding: 8px 3px;
+  font-size: 20px;
+}
+
+.shift-screen-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15% 85%;
+}
+
+.shift-button{
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.sunday-title{
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.sunday-body{
+  grid-row: 2;
+  grid-column: 1;
+
+}
+
+.monday-title{
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.monday-body{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.tuesday-title{
+  grid-row: 1;
+  grid-column: 3;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.tuesday-body{
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.wednesday-title{
+  grid-row: 1;
+  grid-column: 4;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.wednesday-body{
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.thursday-title{
+  grid-row: 1;
+  grid-column: 5;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.thursday-body{
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.friday-title{
+  grid-row: 1;
+  grid-column: 6;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.friday-body{
+  grid-row: 2;
+  grid-column: 6;
+}
+
+.saturday-title{
+  grid-row: 1;
+  grid-column: 7;
+  justify-self: center;
+  padding: 5px 5px;
+}
+
+.saturday-body{
+  grid-row: 2;
+  grid-column: 7;
 }
