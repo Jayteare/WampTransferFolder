@@ -52,6 +52,7 @@ background-color: rgb(96, 125, 139);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 15% 85%;
+  grid-row-gap: 2px;
 }
 
 .shift-button{
@@ -65,6 +66,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 1;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .sunday-body{
@@ -78,6 +81,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 2;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .monday-body{
@@ -90,6 +95,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 3;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .tuesday-body{
@@ -102,6 +109,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 4;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .wednesday-body{
@@ -114,6 +123,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 5;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .thursday-body{
@@ -126,6 +137,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 6;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .friday-body{
@@ -138,6 +151,8 @@ background-color: rgb(96, 125, 139);
   grid-column: 7;
   justify-self: center;
   padding: 5px 5px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
 .saturday-body{
