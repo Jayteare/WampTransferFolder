@@ -169,4 +169,9 @@
     header('Location:http://localhost/462Project/employee_newshift.html.php');
 
   }
+
+  if(isset($_POST['shift_date_submit'])){
+    $_SESSION['shift_date_display'] = $_POST['shift_date_range'];
+    header('Location:http://localhost/462Project/employee_newshift.html.php');
+  }
 ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include 'shiftlookup.php'; ?>
+<?php  include 'shiftlookup.php'; ?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,6 +8,15 @@
     <title>Shift Selection</title>
   </head>
   <body>
+    <h3>Week of <?php echo date("F jS, Y", strtotime($daterange[0])) ?> to <?php echo date("F jS, Y", strtotime($daterange[1])) ?></h3>
+    <form action="/462Project/462input_handler.php" method="post">
+      <div>
+        <label for="party">Choose your desired date to view:</label>
+        <input type="date" id="shift_date_range" name="shift_date_range" required>
+        <input type="submit" name="shift_date_submit">
+      </div>
+    </form>
+
   <div class= "shift-screen-area">
     <div class= "sunday-title">
       <span class="title-body">Sunday</span>
