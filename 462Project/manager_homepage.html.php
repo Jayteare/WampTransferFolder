@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <?php session_start(); ?>
+<!--
+  IGNORE!!!!! THIS HOMEPAGE AND admin_homepage.html.php ARE OBSOLETE DUE TO
+  WORK DONE BY OTHER TEAM MEMBERS!!
+-->
 <html>
   <head>
     <meta charset="utf-8">

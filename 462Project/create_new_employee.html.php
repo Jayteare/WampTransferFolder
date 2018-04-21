@@ -8,7 +8,7 @@
     <title>Create New Employee</title>
   </head>
   <body>
-    <?php if(isset($_SESSION['employeeCreateErrorMsg'])){ //Displays when 462input_handler.php detects an incorrect PIN was entered ?>
+    <?php if(isset($_SESSION['employeeCreateErrorMsg'])){ //Displays when 462input_handler.php detects an invalid submission ?>
       <main class="main-content">
         <div class="content-box">
           <span class="title-text">Placeholder Scheduling Solutions</span>
@@ -34,6 +34,7 @@
         </div>
       </main>
     <?php
+      //JavaScript error pop-up is displayed upon detection of invalid submission
       echo '<script type="text/javascript">
               alert("'.$_SESSION['employeeCreateErrorMsg'].'");
             </script>';

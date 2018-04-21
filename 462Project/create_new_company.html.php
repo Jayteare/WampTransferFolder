@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php session_start(); ?>
+  <?php session_start(); ?>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -8,7 +8,9 @@
     <title>Create New Company</title>
   </head>
   <body>
-    <?php if(isset($_SESSION['companyCreateErrorMsg'])){ //Displays when 462input_handler.php detects an incorrect PIN was entered ?>
+    <?php
+      if(isset($_SESSION['companyCreateErrorMsg'])){ //Displays when 462input_handler.php detects an invalid submission
+    ?>
       <main class="main-content">
         <div class="content-box">
           <span class="title-text">Placeholder Scheduling Solutions</span>
@@ -36,6 +38,7 @@
         </div>
       </main>
     <?php
+      //JavaScript error pop-up is displayed upon detection of invalid submission
       echo '<script type="text/javascript">
               alert("'.$_SESSION['companyCreateErrorMsg'].'");
             </script>';
